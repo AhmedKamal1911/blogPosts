@@ -1,0 +1,25 @@
+---
+title: 'Pre-rendering in Next.js'
+date: '2-2-2024'
+tags:['next.js,'next js', 'new']
+---
+
+# Pre-rendering in Next.js
+
+Next.js uses two main pre-rendering methods to enhance page loading and SEO by generating content on the server before it’s delivered to the client. These methods are:
+
+1. **Static Generation (SSG)**:
+
+   - In Static Generation, pages are built once at build time and then reused across all requests. This approach is optimal for pages where content does not change frequently, as it can significantly improve performance by serving pre-built pages.
+   - This method is ideal for content that’s generally static, such as blog posts, product pages, or marketing content.
+
+2. **Server-Side Rendering (SSR)**:
+   - Server-Side Rendering generates pages at request time, which ensures that each visitor sees up-to-date information. SSR is useful for pages with content that updates frequently, like dashboards or user-specific pages.
+   - Unlike SSG, where pages are generated only once, SSR ensures fresh content by regenerating the page on each request.
+
+### Choosing Between SSG and SSR
+
+- **SSG**: Ideal for static content that doesn’t require frequent updates, maximizing performance by delivering pages directly from the server cache.
+- **SSR**: Best for dynamic content that changes regularly, such as data-driven pages with personalized or frequently updated content.
+
+Pre-rendering in Next.js helps optimize loading times and SEO, ensuring your application delivers a fast, engaging user experience.
